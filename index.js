@@ -1,13 +1,16 @@
 import { ApolloServer } from '@apollo/server';
 import { startStandaloneServer } from '@apollo/server/standalone';
 
+//types
+import { typeDefs } from './schema'
+
 // server setup
 const serverPort = 4000;
 
 const server = new ApolloServer({
-  // typeDefs
-
-  // resolvers
+  // typeDefs -- definitions of types of data
+  typeDefs,
+  // resolvers -- describes the shape of the graph and the data in then including relationships between data objects
 
 })
 
